@@ -25,4 +25,4 @@ python neuron_package_sdk_search.py --manifest /path/to/custom-manifest.json --p
 ```
 
 ### Manifest File
-The manifest file is from [n2-manifest.json](https://github.com/aws-neuron/aws-neuron-sdk/blob/master/src/helperscripts/n2-manifest.json).
+The default manifest file is from [n2-manifest.json](https://github.com/aws-neuron/aws-neuron-sdk/blob/master/src/helperscripts/n2-manifest.json).
