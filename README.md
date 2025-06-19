@@ -3,7 +3,7 @@ Search and mapping AWS Neuron software packages to Neuron SDK version.
 
 ## 🎯 Usage Examples
 
-### **Interactive Search:**
+### **Interactive Search**
 ```
 # Use default manifest
 python neuron_package_sdk_search_interactive.py
@@ -12,10 +12,13 @@ python neuron_package_sdk_search_interactive.py
 python neuron_package_sdk_search_interactive.py --file /path/to/custom-manifest.json
 ```
 
-### **CLI Search:**
+### **CLI Search**
 ```
 # Use default manifest
 python neuron_package_sdk_search.py --package-version aws-neuronx-dkms 2.20.28.0
+
+# Use custom manifest file
+python neuron_package_sdk_search.py --file /path/to/custom-manifest.json --package-version aws-neuronx-dkms 2.20.28.0
 
 # List all packages in SDK version 
 python neuron_package_sdk_search.py --list-sdk 2.23.0
@@ -25,9 +28,6 @@ python neuron_package_sdk_search.py --search-package torch-neuronx
 
 # Find torch-neuronx in SDK
 python neuron_package_sdk_search.py --package-in-sdk torch-neuronx 2.23.0
-
-# Use custom manifest file
-python neuron_package_sdk_search.py --file /path/to/custom-manifest.json --package-version aws-neuronx-dkms 2.20.28.0
 ```
 
 ### Manifest File
