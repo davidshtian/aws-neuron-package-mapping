@@ -148,8 +148,6 @@ Examples:
         """
     )
     
-    parser.add_argument("--manifest", "-m", default="n2-manifest.json",
-                       help="Path to manifest file (default: n2-manifest.json)")
     parser.add_argument("--file", default='n2-manifest.json', help='default=n2-manifest.json')
     
     # Search options
@@ -172,11 +170,8 @@ Examples:
     
     args = parser.parse_args()
     
-    # Use --file if provided, otherwise use --manifest for backward compatibility
-    manifest_file = args.file if hasattr(args, 'file') and args.file != 'n2-manifest.json' else args.manifest
-    
     # Initialize search tool
-    searcher = NeuronSDKSearch(manifest_file)
+    searcher = NeuronSDKSearch(args.file)
     
     # Execute search based on arguments
     if args.package_version:
