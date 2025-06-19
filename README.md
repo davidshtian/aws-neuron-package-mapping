@@ -19,9 +19,6 @@ python neuron_package_sdk_search.py --package-version aws-neuronx-dkms 2.20.28.0
 
 # Use custom manifest file
 python neuron_package_sdk_search.py --file /path/to/custom-manifest.json --package-version aws-neuronx-dkms 2.20.28.0
-
-# Backward compatibility still works
-python neuron_package_sdk_search.py --manifest /path/to/custom-manifest.json --package-version aws-neuronx-dkms 2.20.28.0
 ```
 
 ### Manifest File
